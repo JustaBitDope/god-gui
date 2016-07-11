@@ -10,7 +10,7 @@ TEXT2 = "Blue"
 COLOR2 = "blue"
 ICON2 = "blue_circle.ico"
 
-class godGUI(object):
+class GodGUI(object):
     
     def __init__(self, root):
         self.root = root
@@ -49,5 +49,5 @@ class godGUI(object):
         
 
 main = tk.Tk()
-godGUI(main)
+GodGUI(main)
 main.mainloop()
