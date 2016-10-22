@@ -1,5 +1,5 @@
 # The God GUI
-The most beautiful thing I have ever creatd with my mere mortal hands. Run at your own risk.
+The most beautiful thing I have ever created with my mere mortal hands. Run at your own risk.
 
 ```
 python god_gui.py
