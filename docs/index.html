@@ -2,18 +2,47 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>WAT?! YEAH!</title>
+    <title>Red</title>
     <style type="text/css">
-      
+      html, body {
+        height: 100%;
+        width: 100%;   
+      }
+
+      body {
+        background-color: red;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+      }
     </style>
   </head>
   <body>
 
-    <button>Yo</button>
+    <button id="button" onclick="change()">Red</button>
 
 
     <script type="text/javascript">
-      
+      //document.getElementsByTagName("button").onclick = function() {
+
+      //}
+
+      function change() {
+        var button = document.getElementById("button");
+        var text = button.textContent;
+
+        console.log(button);
+        console.log(text);
+
+        if (text === "Red") {
+          button.textContent = "Blue";
+          document.body.style.backgroundColor = "blue";
+        } else {
+          button.textContent = "Red";
+          document.body.style.backgroundColor = "red";
+        }
+      }
     </script>
   </body>
 </html>

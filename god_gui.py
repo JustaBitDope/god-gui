@@ -3,12 +3,12 @@ import tkinter as tk
 #STATE 1
 TEXT1 = "Red"
 COLOR1 = "red"
-ICON1 = "red_circle.ico"
+ICON1 = "icons/red_circle.ico"
 
 #STATE 2
 TEXT2 = "Blue"
 COLOR2 = "blue"
-ICON2 = "blue_circle.ico"
+ICON2 = "icons/blue_circle.ico"
 
 class GodGUI(object):
     
@@ -26,7 +26,7 @@ class GodGUI(object):
         root.minsize(160, 60)
         root.columnconfigure(0, weight=1)
         root.rowconfigure(0, weight=1)
-        root.iconbitmap(ICON1)
+        #root.iconbitmap(ICON1)
         root.geometry("200x200")
         
         self.frame.grid(sticky="nsew")
@@ -41,11 +41,11 @@ class GodGUI(object):
         if self.text.get() == TEXT1:
             self.text.set(TEXT2)
             self.frame.config(bg=COLOR2)
-            self.root.iconbitmap(ICON2)
+            #self.root.iconbitmap(ICON2)
         else:
             self.text.set(TEXT1)
             self.frame.config(bg=COLOR1)
-            self.root.iconbitmap(ICON1)
+            #self.root.iconbitmap(ICON1)
         
 
 main = tk.Tk()
